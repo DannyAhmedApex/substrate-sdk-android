@@ -6,8 +6,8 @@
 // Required plugin for publishing library module
 apply plugin: 'maven-publish'
 // Replace nisrulz with <your_github_username>
-final group = "com.github.amplica"
-final artifact = "standalone-utils"
+final group = "com.github.LibertyDSNP"
+final artifact = "substrate-sdk-android"
 final versionCode = 1
 final versionName = "1.0"
 
@@ -32,16 +32,6 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = group
                 artifactId = artifact
-                version = versionName
-            }
-
-            // Creates a Maven publication called “debug”.
-            debug(MavenPublication) {
-                // Applies the component for the debug build variant.
-                from components.debug
-
-                groupId = group + ".debug"
-                artifactId = artifact + "-debug"
                 version = versionName
             }
         }
