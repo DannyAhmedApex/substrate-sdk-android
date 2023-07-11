@@ -53,9 +53,9 @@ android {
 cargo {
     module = "../sr25519-java/"
     libname = "sr25519java"
-    pythonCommand = "python"
-    cargoCommand = "cargo"
-    rustcCommand = "rustc"
+//    cargoCommand = "cargo"
+//    rustcCommand = "rustc"
+//    pythonCommand = "python"
     targets = ["arm", "arm64", "x86", "x86_64"]
 }
 
